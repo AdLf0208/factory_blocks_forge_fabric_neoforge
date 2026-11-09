@@ -1,0 +1,486 @@
+{
+  "source": "matthewperiut/factory_blocks@ecdb3591647cf2ff7a306e1e972d335966b119e5 (26.3-1.4.2)",
+  "facings": [
+    "north",
+    "south",
+    "east",
+    "west"
+  ],
+  "blocks": [
+    {
+      "id": "factory_blocks:factory",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:rust",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:vrust",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:srust",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:wireframe",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:pwireframe",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:hazard",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:hazardo",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:circuit",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:metalbox",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:gcircuit",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:pgcircuit",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:grinder",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:old_vents",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:rust_plates",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:bcircuit",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:ice",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:mosaic",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:bwireframe",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:rusty_scaffold",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:caution",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:large_pipes",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:small_pipes",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:vent",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:gvent",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:insulation",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:gears",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:cables",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:rust_bplates",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:grate",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:rgrate",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:hex",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:wgpanel",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:wopanel",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:sturdy",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:megacell",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:exhaust",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:engineer",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:scaffold",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:piping",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:large_plating",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan_side",
+      "kind": "base",
+      "template": "minecraft:iron_block",
+      "states": [
+        ""
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan_on",
+      "kind": "fan",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north",
+        "facing=south",
+        "facing=east",
+        "facing=west"
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan_four_on",
+      "kind": "fan",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north",
+        "facing=south",
+        "facing=east",
+        "facing=west"
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan_malfunction_on",
+      "kind": "fan",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north",
+        "facing=south",
+        "facing=east",
+        "facing=west"
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan",
+      "kind": "redstone_fan",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north,on=false",
+        "facing=north,on=true",
+        "facing=south,on=false",
+        "facing=south,on=true",
+        "facing=east,on=false",
+        "facing=east,on=true",
+        "facing=west,on=false",
+        "facing=west,on=true"
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan_four",
+      "kind": "redstone_fan",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north,on=false",
+        "facing=north,on=true",
+        "facing=south,on=false",
+        "facing=south,on=true",
+        "facing=east,on=false",
+        "facing=east,on=true",
+        "facing=west,on=false",
+        "facing=west,on=true"
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:fan_malfunction",
+      "kind": "redstone_fan",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north,on=false",
+        "facing=north,on=true",
+        "facing=south,on=false",
+        "facing=south,on=true",
+        "facing=east,on=false",
+        "facing=east,on=true",
+        "facing=west,on=false",
+        "facing=west,on=true"
+      ],
+      "in_factory_tag": true
+    },
+    {
+      "id": "factory_blocks:medium_fan",
+      "kind": "medium",
+      "template": "minecraft:white_glazed_terracotta",
+      "states": [
+        "facing=north",
+        "facing=south",
+        "facing=east",
+        "facing=west"
+      ],
+      "in_factory_tag": false
+    }
+  ],
+  "total_states": 82
+}

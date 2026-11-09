@@ -1,0 +1,16 @@
+{
+  "template": "minecraft:white_glazed_terracotta",
+  "properties": {
+    "hardness": 2.0,
+    "explosion_resistance": 2.0,
+    "sounds": "minecraft:iron_block"
+  },
+  "state_properties": {
+    "on": {
+      "type": "boolean"
+    }
+  },
+  "default_state": {
+    "facing": "east"
+  }
+}

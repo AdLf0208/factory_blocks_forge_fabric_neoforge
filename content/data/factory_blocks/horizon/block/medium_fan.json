@@ -1,0 +1,56 @@
+{
+  "template": "minecraft:white_glazed_terracotta",
+  "properties": {
+    "hardness": 2.0,
+    "explosion_resistance": 2.0,
+    "sounds": "minecraft:iron_block"
+  },
+  "default_state": {
+    "facing": "east"
+  },
+  "shapes": {
+    "property": "facing",
+    "values": {
+      "north": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "south": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "east": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "west": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          2.0
+        ]
+      ]
+    }
+  }
+}
