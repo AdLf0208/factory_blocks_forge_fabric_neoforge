@@ -1,57 +1,68 @@
-# Factory Blocks — Horizon port
+# Factory Blocks [Forge/Fabric/NeoForge] — a Horizon port
 
-A port of [Factory Blocks](https://github.com/matthewperiut/factory_blocks) by
-slaincow for Horizon: 49 industrial decorative blocks — factory panels, grating,
-vents, pipes, hazard stripes, riveted plates and machinery faces.
+**Factory Blocks [Forge/Fabric/NeoForge]** is a Minecraft mod. This repository is a **port of it to [Horizon](https://github.com/horizon-rust/horizon)**, the Rust engine for Minecraft Java 26.3. It carries the complete source of the port plus the content files it ships, and installs as a single `.hmod` package.
 
-- Craft them from the mod's own recipes and build with them; every block is a
-  full cube with the upstream textures and models.
-- The OptiFine CTM (connected-texture) data is carried, so connected-texture
-  resource packs shade them like the original.
+Upstream: [matthewperiut/factory_blocks](https://github.com/matthewperiut/factory_blocks) — licence **MIT**.
 
-This is a data-tier carry: no block entity and no behaviour hooks. MIT — the
-mod's own loader metadata declares MIT, its Modrinth page lists CC0-1.0, and the
-discrepancy is recorded in the port repository's LICENSE and LICENSE-NOTICE.md;
-original copyright and licence notices are kept there.
+| | |
+|---|---|
+| Upstream mod | Factory Blocks [Forge/Fabric/NeoForge] ([source](https://github.com/matthewperiut/factory_blocks)) |
+| Ported to | Horizon 0b14f8a, Minecraft Java 26.3, mod API `0.2` |
+| Package | `factory_blocks.hmod` (install it with the Horizon launcher) |
+| Licence | **MIT** — the upstream mod's licence; see [Licence and credit](#licence-and-credit) |
 
-**Original:** [Factory Blocks](https://github.com/matthewperiut/factory_blocks) 1.4.2 by
-slaincow, **MIT**. The original
-copyright and licence notices are kept in [LICENSE](LICENSE), and
-[LICENSE-NOTICE.md](LICENSE-NOTICE.md) records where each was read from.
+## What this port implements
 
-**Horizon:** a port for [Horizon](https://github.com/horizon-rust/horizon), Minecraft:
-Java Edition 26.3 rewritten in Rust. The exact Horizon and horizon-mixins
-revisions this port builds against are pinned in `compatibility.json`.
+- full-cube shape, hardness 2.0, blast resistance 2.0, iron's metal sound,
+- horizontal fan `facing`, default east, and the placement rule (proved in the
+- the `on` state and all 82 state bindings.
+- **Redstone fans do not switch.** `RedstoneFanBlock.neighborUpdate` is a
+- **Per-item tooltips.** `TooltipBlockItem.appendHoverText` prints
+- **The custom `factory_blocks:metal_sound` SoundType.** `properties.sounds`
+- **The vanilla `minecraft:building_blocks` tab.** A content mod cannot append
+- **Chipped/Chisel integration.** The two `chipped:*` recipes and the Chisel
 
-## Install
+## Not yet ported
 
-1. Take `factory_blocks.hmod` from this repository (or build it below).
-2. Put it in the game folder's `horizon-mods` folder — the game folder is the one
-   holding `options.txt`.
-3. Mods are off by default: enable this one in the game's mod list.
+- full-cube shape, hardness 2.0, blast resistance 2.0, iron's metal sound,
+- horizontal fan `facing`, default east, and the placement rule (proved in the
+- the `on` state and all 82 state bindings.
+- **Redstone fans do not switch.** `RedstoneFanBlock.neighborUpdate` is a
+- **Per-item tooltips.** `TooltipBlockItem.appendHoverText` prints
+- **The custom `factory_blocks:metal_sound` SoundType.** `properties.sounds`
+- **The vanilla `minecraft:building_blocks` tab.** A content mod cannot append
+- **Chipped/Chisel integration.** The two `chipped:*` recipes and the Chisel
 
-To try it without installing, start the game with
-`--dev-mod factory_blocks.hmod`.
+## Installing
 
-## Build
+1. Install the [Horizon launcher](https://github.com/horizon-rust/horizon/releases) (0.2.70 or newer).
+2. Add `factory_blocks.hmod` to the instance's mods.
+3. The package is pinned to a specific Horizon build; the launcher checks that pin.
 
-This is a content-only mod: `content/horizon-mod.toml` plus `assets/` and
-`data/`.
+## Licence and credit
 
-```sh
-cd content && cargo horizon-mod build    # packs content/ into the .hmod and checks it
+Factory Blocks [Forge/Fabric/NeoForge] was created by its upstream authors; the code, models and assets in the original mod
+remain theirs and are used here under **MIT**. The Rust in this repository is a clean-room
+rewrite for Horizon, not a translation of the original source.
+
+- `LICENSE` — the upstream licence text.
+- `LICENSE-NOTICE.md` — what this port carries and where it came from.
+- The upstream project: https://github.com/matthewperiut/factory_blocks
+
+## Technical details
+
+```
+horizon-mod.toml   package manifest (id, version, api, [native] pin)
+Cargo.toml         the crate; depends on `horizon-mod-api` from the fetched SDK
+src/               lib.rs (the one `impl Hooks`), runtime.rs (pure logic + tests), glue
+assets/ data/      the content the package ships
+tools/             content generators and the e2e scenario
 ```
 
-`cargo-horizon-mod` comes from the Horizon repository
-(`cargo install --git https://github.com/horizon-rust/horizon cargo-horizon-mod`).
-`tools/e2e.sh` is the in-game harness and expects a campaign checkout
-(`$CAMPAIGN_ROOT`) with the prepared 26.3 resources (`$HORIZON_RES`, default
-`.local/horizon-client/26.3`).
+- Build: `cargo horizon-mod build` (packages; it does not compile against the game).
+- Test: `cargo test`, `cargo clippy --all-targets -- -D warnings`.
+- In-game: `ports/tools/launcher-game.sh run factory_blocks` in the campaign tree, or install the
+  `.hmod` and play; the harness scenario is `tools/e2e.sh`.
 
-## Layout
-
-`content/` is the 49-block data tier (`data/factory_blocks/horizon/block/`) plus the carried assets; `tools/gen_content.py` regenerates the declarations.
-
-This is an unofficial port: Horizon is not affiliated with the original author.
-The licence above is the original's and travels with every copy; see
-[LICENSE](LICENSE) and [LICENSE-NOTICE.md](LICENSE-NOTICE.md).
+This repository is generated from the campaign's port at `ports/factory_blocks/`; the port's own
+`notes.md` is the full record (decisions, traps, evidence).
